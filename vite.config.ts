@@ -8,14 +8,14 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      "@": resolve(__dirname, "src")
-    }
+      "@": resolve(__dirname, "src"),
+    },
   },
   base: "./", // 打包路径
   server: {
     port: 4000,
     open: true, // 自动打开浏览器
-    cors: true // 允许跨域
+    cors: true, // 允许跨域
     // proxy: {
     //   '/api': {
     //     target: 'http://xxx.xxx.xxx.xxx:8000',
@@ -24,5 +24,5 @@ export default defineConfig({
     //     rewrite: (path) => path.replace('/api/', '/')
     //   }
     // }
-  }
+  },
 });
