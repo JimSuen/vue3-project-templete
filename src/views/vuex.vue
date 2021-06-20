@@ -22,9 +22,9 @@ export default defineComponent({
     return {
       handleClickBtn,
       count: computed(() => store.state.count),
-      double: computed(() => store.getters.double),
+      double: computed(() => store.getters.double)
     };
-  },
+  }
 });
 </script>
 
