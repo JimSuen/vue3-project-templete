@@ -3,6 +3,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
+    "format": "prettier --write ./src",
+    "lint": "eslint ./src --ext .vue,.js,.ts",
+    "lint-fix": "eslint --fix ./src --ext .vue,.js,.ts",
     "serve": "vite preview",
     "prepare": "husky install"
   },
